@@ -3,11 +3,13 @@ $(document).ready(function(){
 	$.ajax({
 			url:'file://userData.json',
 			type: "GET",
+			data:data,
+			crossDomain:True,
 			// dataType refers to the type of data im getting back i.e. Json,XML ect.
 			dataType:'jsonp',
 			contentType: "jsonp",
 			success:function(data){
-				alert(user);
+				alert(data);
 				/*
 				var user=[];
 			$.each(data,function(key,val){
@@ -28,7 +30,7 @@ $(document).ready(function(){
 */
 
 			}
-			
+
 
 		})
 
