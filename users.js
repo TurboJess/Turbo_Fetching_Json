@@ -1,11 +1,14 @@
 $(document).ready(function(){
 
 	$.ajax({
-			url:'file:///userData.json',
+			url:'file://userData.json',
+			type: "GET",
 			// dataType refers to the type of data im getting back i.e. Json,XML ect.
 			dataType:'jsonp',
 			contentType: "jsonp",
 			success:function(data){
+				alert(user);
+				/*
 				var user=[];
 			$.each(data,function(key,val){
 				// key will be the id and the val/value will be visable
@@ -22,11 +25,13 @@ $(document).ready(function(){
 				html:user.join("")
 
 			}).appendTo("body");
+*/
 
 			}
+			
 
 		})
 
 
-	
+
 })
