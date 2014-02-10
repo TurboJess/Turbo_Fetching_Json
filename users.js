@@ -3,11 +3,11 @@ $(document).ready(function(){
 	$.ajax({
 			url:'file://userData.json',
 			type: "GET",
-			data:data,
-			crossDomain:True,
+			crossDomain:true,
+			data:{text}
 			// dataType refers to the type of data im getting back i.e. Json,XML ect.
-			dataType:'jsonp',
-			contentType: "jsonp",
+			dataType:'json',
+			contentType: "json",
 			success:function(data){
 				alert(data);
 				/*
